@@ -16,7 +16,7 @@ exports.onPostBootstrap = async ({ reporter }) => {
         dumpLicenses(crawlerOptions,
             (error, res) => {
                 if (error) {
-                    throw new Error(`Error: ${error}`)
+                    throw new Error(error)
                 } else {
                     resolve(res)
                 }
